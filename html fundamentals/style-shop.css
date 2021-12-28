@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .shoe-heading {
@@ -15,11 +16,11 @@
   font-weight: bold;
 } */
 
-.body {
+.product {
   font-family: sans-serif;
   line-height: 1.4;
   border: 4px solid black;
-  width: 800px;
+  width: 875px;
   margin: 50px auto;
   position: relative;
 }
@@ -51,6 +52,7 @@
 .color-red {
   background-color: red;
 }
+
 .sale {
   position: absolute;
   background-color: red;
@@ -67,7 +69,7 @@ li {
 }
 
 h4 {
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 h4,
@@ -97,10 +99,16 @@ a:active {
   color: #464545;
   font-weight: bold;
   margin-bottom: 15px;
+  float: right;
+  margin-top: 8px;
 }
 
 .more-info {
   margin-bottom: 20px;
+}
+
+.price {
+  float: left;
 }
 
 .button {
@@ -118,6 +126,36 @@ a:active {
   color: black;
 }
 
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
 .product-details {
   margin-left: 20px;
+}
+
+.shoe-info {
+  width: 250px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-top: 20px;
+  width: 243px;
+  float: left;
+}
+
+.shoe-image {
+  float: left;
+  margin-right: 40px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
