@@ -29,8 +29,11 @@
   background-color: black;
   height: 22px;
   width: 22px;
-  display: inline-block;
-  margin-right: 10px;
+}
+
+.colors {
+  display: flex;
+  gap: 20px;
 }
 
 .color-blue {
@@ -98,17 +101,12 @@ a:active {
 .free-shipping {
   color: #464545;
   font-weight: bold;
-  margin-bottom: 15px;
-  float: right;
-  margin-top: 8px;
+  /* margin-bottom: 15px; */
+  /* margin-top: 8px; */
 }
 
 .more-info {
   margin-bottom: 20px;
-}
-
-.price {
-  float: left;
 }
 
 .button {
@@ -131,16 +129,23 @@ a:active {
   margin-bottom: 10px;
 }
 
-.product-details {
-  margin-left: 20px;
+.details {
+  margin-top: 20px;
+  flex: 1;
 }
 
 .shoe-info {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .shoe-info {
   width: 250px;
   float: left;
   margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  
+  
 }
 
 .details {
@@ -158,4 +163,16 @@ a:active {
   content: "";
   display: block;
   clear: both;
+} */
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
